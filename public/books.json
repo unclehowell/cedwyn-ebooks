@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-11-01T20:36:01Z",
+ "updated_utc": "2026-11-11T11:40:01Z",
  "books": [
   {
    "id": "great-house-farm-wiki",
@@ -39,6 +39,23 @@
     "pages": 43,
     "whats_new": "2.0.0: rewritten as the dated record from 1877 to 2026 with the missing-records, anomalies and source-conflicts registers; interpretation marked as Our reading; retitled; no web addresses or sale lines."
    }
+  },
+  {
+   "id": "words-on-the-record",
+   "title": "Words on the Record",
+   "subtitle": "Tŷ Mawr (Great House): the language of the court, the Land Registry and the council, read closely",
+   "semver": "0.1.0",
+   "status": "on-sale",
+   "date": "2026-11-11",
+   "updated": "2026-11-11",
+   "edition": "v0.1.0",
+   "pages": 54,
+   "description": "How the official record on Tŷ Mawr (Great House), Llandough, is worded: the 1987 Court of Appeal judgment, the Land Registry’s six replies of 2026, the community council’s positions and the names written on the house since 1806. Each passage is quoted exactly, dated and sourced to the evidence catalogue; each reading is labelled as documented or as the family’s position; and every chapter ends with what cuts against it and where it may be wrong.",
+   "whats_new": "v0.1.0 (11 Nov 2026): first complete edition, fifteen chapters with the word register and the records cited. v0.0.1 (16-page preview) is free.",
+   "price": "£4.99",
+   "shop_url": "https://ebooks.bucklerfamily.estate/words-on-the-record/",
+   "buy_url": "https://buy.stripe.com/7sY28sc0bcmzfSQ10b6Zy0L",
+   "source_site": "cedwyn.bucklerfamily.estate"
   },
   {
    "id": "project-management",
