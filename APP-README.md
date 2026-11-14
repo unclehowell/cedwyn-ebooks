@@ -1,4 +1,4 @@
-# ebooks.bucklerfamily.estate
+# bucklerfamily.estate/ebooks
 
 Catalogue of the Great House Farm / Tŷ Mawr e-books. Static site; Cloudflare Pages project `bucklerfamily-ebooks`
 serves this branch (`ebooks` of unclehowell/datro), output directory `public/`, no build command.
