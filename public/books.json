@@ -53,7 +53,7 @@
       "description": "How the official record on Tŷ Mawr (Great House), Llandough, is worded: the 1987 Court of Appeal judgment, the Land Registry’s six replies of 2026, the community council’s positions and the names written on the house since 1806. Each passage is quoted exactly, dated and sourced to the evidence catalogue; each reading is labelled as documented or as the family’s position; and every chapter ends with what cuts against it and where it may be wrong.",
       "whats_new": "v0.1.0 (11 Nov 2026): first complete edition, fifteen chapters with the word register and the records cited. v0.0.1 (16-page preview) is free.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/words-on-the-record/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/words-on-the-record/",
       "buy_url": "https://buy.stripe.com/7sY28sc0bcmzfSQ10b6Zy0L",
       "source_site": "cedwyn.bucklerfamily.estate"
     },
@@ -68,7 +68,7 @@
       "description": "The PRINCE2 dossier of the Great House Farm (Tŷ Mawr) programme and digital estate: PID, business case, five projects, plans, highlight reports and the risk, issue, quality and lessons registers.",
       "whats_new": "1.0.0: first edition. Six parts and five appendices: the estate and workstream PIDs, business case and cost plan, the projects (e-book flywheel, research flywheel, disclosure, Wayback preservation and the planned Patagonia replica museum), plans, highlight reports, all registers, the 81-item asset register and an index of documents and references. Paid steps are marked PAID.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/projects/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/projects/",
       "buy_url": "https://buy.stripe.com/8x26oI2pBgCP4a810b6Zy0B",
       "source_site": "projects.bucklerfamily.estate",
       "next_release": {
@@ -90,7 +90,7 @@
       "description": "A handbook to every institution on the disclosure dartboard: what each body is, which information laws apply, its ladder of routes from first enquiry to tribunal and court with the legal basis, time limit and cost of each step, and what has been asked and answered so far.",
       "whats_new": "Version 1.0.2 corrects the fees appendix and the introduction to the bodies added on 20 October. The first edition covers 47 institutions and 474 rungs, each with its legal basis, time limit, cost (PAID steps flagged) and status; one chapter per institution with the record of requests and replies; the strongest unused free routes; a rung-by-rung legal reference; and an index of official references.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/dartboard/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/dartboard/",
       "buy_url": "https://buy.stripe.com/fZu5kE4xJ9an0XW6kv6Zy0C",
       "source_site": "dartboard.bucklerfamily.estate",
       "next_release": {
@@ -112,7 +112,7 @@
       "description": "A casebook in seven files on when each death in the Williams and Buckler line at Great House Farm (Tŷ Mawr), Llandough fell against the dated land and legal events, from John Williams (I) to William Buckler in 1990: the records, the gaps, the conflicting dates, three close coincidences and what cuts against each.",
       "whats_new": "1.0.0: first edition. Seven case files (nine people), two timelines, three coincidences, the conflicting dates, the legal clocks, the defence, open questions and the records that would answer them. New this edition: John Williams (II) died 17 July 1908 and his widow Mary on 23 December 1915 (probate calendar); William Buckler's 1990 death tied by date of birth (FreeBMD). Paid records are marked PAID.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/tymawr-deaths/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/tymawr-deaths/",
       "buy_url": "https://buy.stripe.com/bJe5kE0ht3Q3364bEP6Zy0D",
       "source_site": "greathousefarmwiki.wordpress.com",
       "next_release": {
@@ -134,7 +134,7 @@
       "description": "The police, court and press record of Great House Farm (Tŷ Mawr), Llandough, 1891–1989, as dated record cards with exact quotes and sources. A charge is not a conviction; this book names nobody as having committed a crime unless a conviction or court finding is on record.",
       "whats_new": "0.2.0: edition v0.0.2. Adds William Buckler in his own printed words, a timeline of every record, repositories and references, and album plates.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/recorded-incidents/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/recorded-incidents/",
       "buy_url": "https://buy.stripe.com/14A5kEe8j9an22010b6Zy0E",
       "source_site": "greathousefarmwiki.wordpress.com",
       "next_release": {
@@ -156,7 +156,7 @@
       "description": "The history and heritage of Great House Farm (Tŷ Mawr), Llandough: its names, the Bute estate years, the fabric of the house from the farm’s own album, the archaeology of Llandough and the 1988 listing survey.",
       "whats_new": "0.2.0: edition v0.0.2. Adds the album as a photographic survey, the house plans in the album, a timeline, and the references.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/tymawr-heritage/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/tymawr-heritage/",
       "buy_url": "https://buy.stripe.com/bJe8wQ0ht1HV364bEP6Zy0F",
       "source_site": "greathousefarmwiki.wordpress.com",
       "next_release": {
@@ -178,7 +178,7 @@
       "description": "The Williams–Buckler family of Great House Farm (Tŷ Mawr), Llandough: people, records and a family tree, with every inferred link marked and every missing record listed.",
       "whats_new": "0.2.0: edition v0.0.2. Adds a source register for each person, the SOURCE PENDING register, and photographs of the rooms of the family home.",
       "price": "£4.99",
-      "shop_url": "https://ebooks.bucklerfamily.estate/williams-buckler-family/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/williams-buckler-family/",
       "buy_url": "https://buy.stripe.com/00wbJ24xJfyL5eccIT6Zy0G",
       "source_site": "greathousefarmwiki.wordpress.com",
       "next_release": {
@@ -200,7 +200,7 @@
       "description": "Tŷ Mawr, the Great House Farm at Llandough, carried other names in the records: Cydwin, Cydfin, Cedfin and Ked Fen. This book gathers the record on those names, the places near the farm that carry them, the legend of the giant Cedwyn Gawr, the saint Cedwyn, and the line of title from a 1,000-year lease of 1547. Every item is graded.",
       "whats_new": "0.1.0: first edition (v0.0.1, free, PDF and online). Edition v0.0.2 (£4.99, PDF) is in preparation: the wording of the 1547 lease, the 1552 Bute deed, the originals of “Ked Fen”, the c.1798 conveyance and the 1824 field names.",
       "price": "£0.00",
-      "shop_url": "https://ebooks.bucklerfamily.estate/cedwyn/",
+      "shop_url": "https://bucklerfamily.estate/ebooks/cedwyn/",
       "buy_url": null,
       "source_site": "greathousefarmwiki.wordpress.com",
       "next_release": {
