@@ -1,14 +1,26 @@
 # Changelog — Great House Farm e-book catalogue
 
+## [0.1.2] - 2026-11-19
+
+### Fixed
+- Prefer the dedicated `ebooks.bucklerfamily.estate` reader iframe for all book-keyed modal previews, including apex `/ebooks/api/free` URLs that redirect from `bucklerfamily.estate`. This prevents PDF.js from following the redirect into a cross-origin fetch and keeps the PDF inside the existing modal.
+- Retain support for both bare IDs (for example, `cedwyn`) and edition-qualified keys (for example, `cedwyn@1.0.0`) in the modal and standalone reader.
+
+### Validated
+- Strengthen the regression test to verify that the book-keyed iframe route runs before the same-origin PDF.js route across all 11 published reader entry points.
+- Run the test through GitHub Actions before publishing the `v0.1.2` release.
+
 ## [0.1.1] - 2026-11-19
 
 ### Fixed
-- Accept both bare book IDs (for example, `cedwyn`) and edition-qualified IDs (for example, `cedwyn@1.0.0`) in the PDF modal and standalone reader. The unversioned free-edition link now opens the in-modal reader instead of being rejected before the reader loads.
+- Accept both bare book IDs (for example, `cedwyn`) and edition-qualified IDs (for example, `cedwyn@1.0.0`) in the PDF modal and standalone reader.
 - Apply the same book-key validation to the shelf, all individual book pages and the standalone reader.
 
+### Follow-up
+- The bare-ID acceptance fix did not by itself avoid the apex-to-`ebooks.bucklerfamily.estate` redirect when PDF.js fetched `/ebooks/api/free`. Version 0.1.2 corrects that routing order by using the dedicated reader origin for book-keyed modal previews.
+
 ### Validated
-- Added a Node.js regression test covering every published PDF-reader entry point.
-- Added a GitHub Actions release workflow: it runs the reader contract test and creates the matching `v0.1.1` GitHub Release from the versioned changelog after the change reaches `main`.
+- Added the initial Node.js regression test and automated SemVer release workflow.
 
 ## [0.1.0] - 2026-10-24
 
