@@ -1,6 +1,7 @@
 name: PDF reader checks and SemVer release
 
 on:
+  workflow_dispatch:
   pull_request:
     branches: [main]
     paths:
@@ -35,7 +36,7 @@ jobs:
         run: node --test tests/pdf-reader-contract.test.js
 
   release:
-    if: github.event_name == 'push' && contains(join(github.event.head_commit.modified, ','), '.version')
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     needs: reader-contract
     runs-on: ubuntu-latest
     steps:
@@ -56,8 +57,8 @@ jobs:
           fi
           TAG="v$VERSION"
           if gh release view "$TAG" >/dev/null 2>&1; then
-            echo "Release $TAG already exists; refusing to overwrite it." >&2
-            exit 1
+            echo "Release $TAG already exists; no duplicate will be created."
+            exit 0
           fi
           awk -v version="$VERSION" '
             index($0, "## [" version "]") == 1 { found=1; next }
