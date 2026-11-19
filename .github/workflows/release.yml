@@ -1,0 +1,69 @@
+name: PDF reader checks and SemVer release
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'public/**/index.html'
+      - 'tests/**'
+      - '.version'
+      - 'CHANGELOG.md'
+      - '.github/workflows/release.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'public/**/index.html'
+      - 'tests/**'
+      - '.version'
+      - 'CHANGELOG.md'
+      - '.github/workflows/release.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reader-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Test PDF reader book-key routing
+        run: node --test tests/pdf-reader-contract.test.js
+
+  release:
+    if: github.event_name == 'push' && contains(join(github.event.head_commit.modified, ','), '.version')
+    needs: reader-contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - name: Create tagged GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="$(cat .version)"
+          if ! printf '%s\n' "$VERSION" | grep -Eq '^(0|[1-9][0-9]*)[.](0|[1-9][0-9]*)[.](0|[1-9][0-9]*)$'; then
+            echo "Invalid SemVer in .version: $VERSION" >&2
+            exit 1
+          fi
+          TAG="v$VERSION"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; refusing to overwrite it." >&2
+            exit 1
+          fi
+          awk -v version="$VERSION" '
+            index($0, "## [" version "]") == 1 { found=1; next }
+            found && substr($0,1,4)=="## [" { exit }
+            found { print }
+            END { if (!found) exit 1 }
+          ' CHANGELOG.md > "$RUNNER_TEMP/release-notes.md"
+          test -s "$RUNNER_TEMP/release-notes.md"
+          gh release create "$TAG" --target "$GITHUB_SHA" --title "E-book Shelf $TAG" --notes-file "$RUNNER_TEMP/release-notes.md"
